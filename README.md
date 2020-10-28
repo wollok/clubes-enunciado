@@ -20,6 +20,8 @@ Si bien cualquier club puede tener equipos y actividades sociales, cada club def
 
 0. Saber todos los socios de un club, todos los jugadores de un equipo y todos los socios de una actividad social
 
+1. Saber el socio más viejo de un club.
+
 1. Saber si un socio es estrella, lo cual es distinto de si se trata de un jugador o un socio común. 
 Un socio común es estrella si lleva más de 20 años en la institución. 
 Un jugador que tiene 50 o más partidos en el club es una estrella.
