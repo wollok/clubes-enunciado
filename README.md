@@ -20,13 +20,33 @@ Si bien cualquier club puede tener equipos y actividades sociales, cada club def
 
 1. Saber si un socio es estrella, lo cual es distinto de si se trata de un jugador o un socio común. 
 Un socio común es estrella si lleva más de 20 años en la institución. 
-Un jugador que tiene 50 o más partidos en el club es una estrella. 
+Un jugador que tiene 50 o más partidos en el club es una estrella.
+ 
 Pero un jugador con menos partidos también podría serlo dependiendo del perfil del club:
 Si juega en un club Profesional, es estrella si el valor de su pase supera un valor configurable para el sistema, que es el mismo para todos los jugadores. 
 Si juega en un club Comunitario, es estrella si participa en 3 o más actividades del club (deportivas o sociales).
 Si juega en un club tradicional, puede ser estrella tanto porque su pase supera el valor configurado o porque participa en 3 o más actividades del club.
 
-2.Sanciones: Se puede sancionar tanto al club integralmente como a una actividad particular. Si se sanciona al club, el efecto es que se aplica la sanción a todas sus actividades. Para un equipo interesa saber la cantidad de veces que fue sancionado. Mientras que si una actividad social es sancionada, la misma queda suspendida hasta que se determine lo contrario. Un club con menos de 500 socios no puede ser sancionado de manera integral (pero sí se puede sancionar a una actividad del mismo). 
+Ejemplo: En un club tradicional, bellota, bombon y burbuja son jugadoras, y el profesor es un socio comun.
+	- Bellota: su pase es de un millon, juega al futbol y al basquet. Aun no disputa ningún partido. Tiene 0 años de antiguedad. 
+	- Bombon: su pase es de 1000, juega al basquet. tiene 100 partidos. Tiene 0 años de antiguedad.
+	- Burbuja: su pase es de 1000, juega al futbol y al basquet. También va a los asados de los domingos. Tiene 10 partidos jugados. Tiene 0 años de antiguedad
+	- Profesor: solo asiste a los asados del domingo, tiene anio de antiguedad. Tiene 0 años de antiguedad.
+	- el valor del pase para ser considerado estrella es de 500000.
+
+En este caso Bellota es estrella por el valor del pase. Burbuja es estrella por los partidos jugados. 
+Burbuja es estrella por tener 3 actividades. El profesor no es estrella ya que no tiene la antiguedad requerida
+
+En las mismas condiciones pero en un club profesional,  solo Bellota y Bombon son estrellas, mientras que 
+en un club comunitario solo Bombón y Burbuja son estrella.
+
+2.Sanciones: 
+Se puede sancionar tanto al club integralmente como a una actividad particular. 
+Si se sanciona al club, el efecto es que se aplica la sanción a todas sus actividades. 
+Para un equipo interesa saber la cantidad de veces que fue sancionado. 
+Mientras que si una actividad social es sancionada, 
+la misma queda suspendida hasta que se determine lo contrario. 
+Un club con menos de 500 socios no puede ser sancionado de manera integral (pero sí se puede sancionar a una actividad del mismo). 
 Se pide que el sistema permita:
 	- Sancionar un club
 	- Sancionar una actividad
