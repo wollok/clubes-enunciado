@@ -18,11 +18,16 @@ Si bien cualquier club puede tener equipos y actividades sociales, cada club def
 
 ## Requerimientos.
 
-0. Saber todos los socios de un club, todos los jugadores de un equipo y todos los socios de una actividad social
+### Consultas simples
+- Saber todos los socios de un club, todos los jugadores de un equipo y todos los socios de una actividad social
 
-1. Saber el socio más viejo de un club.
+- Saber el socio más viejo de un club.
 
-1. Saber si un socio es estrella, lo cual es distinto de si se trata de un jugador o un socio común. 
+- Obtener los socios destacados de un club, un socio destacado es aquel que es capitán de un equipo u organizador de una actividad social.
+
+### Estrella 
+
+Saber si un socio es estrella, lo cual es distinto de si se trata de un jugador o un socio común. 
 Un socio común es estrella si lleva más de 20 años en la institución. 
 Un jugador que tiene 50 o más partidos en el club es una estrella.
  
@@ -44,7 +49,10 @@ Burbuja es estrella por tener 3 actividades. El profesor no es estrella ya que n
 En las mismas condiciones pero en un club profesional,  solo Bellota y Bombon son estrellas, mientras que 
 en un club comunitario solo Bombón y Burbuja son estrella.
 
-2.Sanciones: 
+También se pide Obtener de entre los socios destacados, aquellos que además son estrellas.
+
+
+### Sanciones: 
 Se puede sancionar tanto al club integralmente como a una actividad particular. 
 Si se sanciona al club, el efecto es que se aplica la sanción a todas sus actividades. 
 Para un equipo interesa saber la cantidad de veces que fue sancionado. 
@@ -58,23 +66,29 @@ Se pide que el sistema permita:
 	- Saber la cantidad de sanciones de un equipo
 	- Saber si una actividad social está suspendida
 
-3. Obtener la evaluación  de una actividad, el cual se mide como un número de unidades.
+### Evaluaciones de actividades
+
+Obtener la evaluación  de una actividad, el cual se mide como un número de unidades.
 Los equipos suman 5 unidades por campeonato obtenido, 2 unidades por cada miembro del plantel y 5 puntos más si su capitán es una estrella. Además se le restan 20 puntos por cada sanción aplicada. 
 Para un equipo de fútbol vale la regla de todos los equipos, pero se le suman además 5 puntos por cada estrella del plantel (En este caso si el capitán es una estrella aportaría 10 puntos, 5 por la regla de “capitán estrella” y 5 por la regla de “miembro del plantel estrella”). Además, cada sanción descuenta 30 puntos en lugar de los 20 que descuenta para otros deportes.
 La evaluación de una actividad social es un valor que se conoce para cada actividad, siempre y cuando no esté suspendida. Si se encontrara suspendida se evalúa con 0.
  
 
-4. Obtener la evaluación de un club, el cual se calcula como la división entre un número llamado evaluación bruta y la cantidad de socios del mismo. Para la evaluación bruta también se tiene en cuenta el gasto mensual del club, que es un valor que se conoce para cada club. 
+### Evaluaciones de clubes
+Obtener la evaluación de un club, el cual se calcula como la división entre un número llamado evaluación bruta y la cantidad de socios del mismo. Para la evaluación bruta también se tiene en cuenta el gasto mensual del club, que es un valor que se conoce para cada club. 
 La evaluación bruta se calcula distinto para cada perfil:
 	- Tradicional: Es la suma de las evaluaciones de sus actividades menos el gasto mensual del club.
 	- Comunitario: Es la suma de las evaluaciones de sus actividades  (no interesa los gastos)
 	- Profesional: Es el doble de la suma de las evaluaciones de sus actividades menos 5 veces el gasto mensual del club.
 
-5. Obtener los socios destacados de un club, un socio destacado es aquel que es capitán de un equipo u organizador de una actividad social.
-6. Obtener de entre los socios destacados, aquellos que además son estrellas.
-7. Saber si un equipo es experimentado. Un equipo es experimentado si todos los miembros del plantel tienen al menos 10 partidos jugados.
-8. Saber si un club es prestigioso. Un club es prestigioso si tiene al menos un equipo experimentado o al menos una de sus actividades sociales tiene 5 o más participantes estrellas.
-9. Transferir un jugador de un equipo a otro, teniendo en cuenta que:
+### Equipos experimentados
+Saber si un equipo es experimentado. Un equipo es experimentado si todos los miembros del plantel tienen al menos 10 partidos jugados.
+
+### Clubes Prestigiosos
+Saber si un club es prestigioso. Un club es prestigioso si tiene al menos un equipo experimentado o al menos una de sus actividades sociales tiene 5 o más participantes estrellas.
+
+### Transferir
+Transferir un jugador de un equipo a otro, teniendo en cuenta que:
 	-Un jugador que es socio destacado no puede ser transferido.
 	- Tampoco se puede transferir entre equipos del mismo club.
 	- Se debe remover el jugador de todos los equipos y actividades del club origen
