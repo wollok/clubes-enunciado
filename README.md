@@ -37,11 +37,11 @@ Si juega en un club Comunitario, es estrella si participa en 3 o más actividade
 Si juega en un club tradicional, puede ser estrella tanto porque su pase supera el valor configurado o porque participa en 3 o más actividades del club.
 
 Ejemplo: En un club tradicional, bellota, bombon y burbuja son jugadoras, y el profesor es un socio comun.
-	- Bellota: su pase es de un millon, juega al futbol y al basquet. Aun no disputa ningún partido. Tiene 0 años de antiguedad. 
-	- Bombon: su pase es de 1000, juega al basquet. tiene 100 partidos. Tiene 0 años de antiguedad.
-	- Burbuja: su pase es de 1000, juega al futbol y al basquet. También va a los asados de los domingos. Tiene 10 partidos jugados. Tiene 0 años de antiguedad
-	- Profesor: solo asiste a los asados del domingo, tiene anio de antiguedad. Tiene 0 años de antiguedad.
-	- el valor del pase para ser considerado estrella es de 500000.
+  - Bellota: su pase es de un millon, juega al futbol y al basquet. Aun no disputa ningún partido. Tiene 0 años de antiguedad. 
+  - Bombon: su pase es de 1000, juega al basquet. tiene 100 partidos. Tiene 0 años de antiguedad.
+  - Burbuja: su pase es de 1000, juega al futbol y al basquet. También va a los asados de los domingos. Tiene 10 partidos jugados. Tiene 0 años de antiguedad
+  - Profesor: solo asiste a los asados del domingo, tiene anio de antiguedad. Tiene 0 años de antiguedad.
+  - el valor del pase para ser considerado estrella es de 500000.
 
 En este caso Bellota es estrella por el valor del pase. Burbuja es estrella por los partidos jugados. 
 Burbuja es estrella por tener 3 actividades. El profesor no es estrella ya que no tiene la antiguedad requerida
@@ -60,11 +60,11 @@ Mientras que si una actividad social es sancionada,
 la misma queda suspendida hasta que se determine lo contrario. 
 Un club con menos de 500 socios no puede ser sancionado de manera integral (pero sí se puede sancionar a una actividad del mismo). 
 Se pide que el sistema permita:
-	- Sancionar un club
-	- Sancionar una actividad
-	- Reanudar una actividad social
-	- Saber la cantidad de sanciones de un equipo
-	- Saber si una actividad social está suspendida
+  - Sancionar un club
+  - Sancionar una actividad
+  - Reanudar una actividad social
+  - Saber la cantidad de sanciones de un equipo
+  - Saber si una actividad social está suspendida
 
 ### Evaluaciones de actividades
 
@@ -77,9 +77,9 @@ La evaluación de una actividad social es un valor que se conoce para cada activ
 ### Evaluaciones de clubes
 Obtener la evaluación de un club, el cual se calcula como la división entre un número llamado evaluación bruta y la cantidad de socios del mismo. Para la evaluación bruta también se tiene en cuenta el gasto mensual del club, que es un valor que se conoce para cada club. 
 La evaluación bruta se calcula distinto para cada perfil:
-	- Tradicional: Es la suma de las evaluaciones de sus actividades menos el gasto mensual del club.
-	- Comunitario: Es la suma de las evaluaciones de sus actividades  (no interesa los gastos)
-	- Profesional: Es el doble de la suma de las evaluaciones de sus actividades menos 5 veces el gasto mensual del club.
+  - Tradicional: Es la suma de las evaluaciones de sus actividades menos el gasto mensual del club.
+  - Comunitario: Es la suma de las evaluaciones de sus actividades  (no interesa los gastos)
+  - Profesional: Es el doble de la suma de las evaluaciones de sus actividades menos 5 veces el gasto mensual del club.
 
 ### Equipos experimentados
 Saber si un equipo es experimentado. Un equipo es experimentado si todos los miembros del plantel tienen al menos 10 partidos jugados.
@@ -89,12 +89,12 @@ Saber si un club es prestigioso. Un club es prestigioso si tiene al menos un equ
 
 ### Transferir
 Transferir un jugador de un equipo a otro, teniendo en cuenta que:
-	-Un jugador que es socio destacado no puede ser transferido.
-	- Tampoco se puede transferir entre equipos del mismo club.
-	- Se debe remover el jugador de todos los equipos y actividades del club origen
-	- Se debe agregar el jugador al equipo destino.
-	- La transferencia afecta a la cantidad de socios de ambos clubes (El club del equipo origen tiene un socio menos y el club del equipo destino tiene un socio más)
-	- La cantidad de partidos jugados del jugador se resetea.
+  - Un jugador que es socio destacado no puede ser transferido.
+  - Tampoco se puede transferir entre equipos del mismo club.
+  - Se debe remover el jugador de todos los equipos y actividades del club origen
+  - Se debe agregar el jugador al equipo destino.
+  - La transferencia afecta a la cantidad de socios de ambos clubes (El club del equipo origen tiene un socio menos y el club del equipo destino tiene un socio más)
+  - La cantidad de partidos jugados del jugador se resetea.
 
     
 
